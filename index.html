@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://bintang.test/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>BINTANG GUN SHOP</title>
+    <link rel="Icon" href="http://bintang.test/img/swords.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="./index_files/all.css">
+    <link href="./index_files/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./index_files/lightbox.min.css" rel="stylesheet">
+    <link href="./index_files/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./index_files/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top shadow" style="top: -55px;">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="mailto:putranbintang5@gmail.com" class="text-white">putranbintang5@gmail.com</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="http://bintang.test/index.html" class="navbar-brand">
+                    <h1 class="text-primary display-6">BINTANG GUN SHOP</h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="http://bintang.test/index.php" class="nav-item nav-link active">Beranda</a>
+                        <a href="http://bintang.test/shop.php" class="nav-item nav-link">Belanja</a>
+                        <a href="http://bintang.test/contact.php" class="nav-item nav-link">Hubungi Kami</a>
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                                                <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fas fa-search text-primary"></i>
+                        </button>
+                        <a href="http://bintang.test/cart.php" class="position-relative me-4 my-auto">
+                            <i class="fa fa-shopping-bag fa-2x"></i>
+                            <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px">0</span>
+                        </a>
+                        <a href="http://bintang.test/#" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Search by keyword
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-12 col-lg-7">
+                    <h4 class="mb-3 text-secondary">Irasshaimase</h4>
+                    <h1 class="mb-3 display-3 text-primary">GUN and BULLET shop</h1>
+                    <p class="mb-1">
+                        Penyedia Segala Jenis Gun &amp; Bullet Dari Sepanjang Zaman
+                    </p>
+                    <p class="mb-4 text-danger">! Produk Dari penyedia Resmi Dengan Harga Asli !</p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="text" placeholder="Cari barang">
+                        <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%">
+                            Cari Sekarang
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item rounded">
+                                <img src="./index_files/api.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                                <a href="http://bintang.test/#" class="btn px-4 py-2 text-white rounded">Fire Gun</a>
+                            </div>
+                            <div class="carousel-item rounded active">
+                                <img src="./index_files/angin.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                <a href="http://bintang.test/#" class="btn px-4 py-2 text-white rounded">Air gun</a>
+                            </div>
+                            <div class="carousel-item rounded">
+                                <img src="./index_files/amunisi.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                <a href="http://bintang.test/#" class="btn px-4 py-2 text-white rounded">Bullet</a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Featurs Section Start -->
+    <div class="container-fluid featurs py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-car-side fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Pengiriman Gratis</h5>
+                            <p class="mb-0">Untuk Item Tertentu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-user-shield fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Keamanan Pembayaran</h5>
+                            <p class="mb-0">keamanan Pembayaran 100%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-user-shield fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Perizinan</h5>
+                            <p class="mb-0">Perizinan Resmi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fa fa-phone-alt fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>24/7 Support</h5>
+                            <p class="mb-0">Dukungan setiap saat dengan cepat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featurs Section End -->
+
+    <!-- Fruits Shop Start-->
+    <div class="container-fluid fruite py-5">
+        <div class="container py-5">
+            <div class="tab-class text-center">
+                <div class="row g-4">
+                    <div class="col-lg-4 text-start">
+                        <h1>Produk Kami</h1>
+                    </div>
+                    <div class="col-lg-8 text-end">
+                        <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="http://bintang.test/#tab-1">
+                                    <span class="text-dark" style="width: 130px;">Semua Produk</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="http://bintang.test/#tab-2">
+                                    <span class="text-dark" style="width: 130px;">Bullet</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="http://bintang.test/#tab-3">
+                                    <span class="text-dark" style="width: 130px;">Fire Gun</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="http://bintang.test/#tab-4">
+                                    <span class="text-dark" style="width: 130px;">Air Gun</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/77aa7aca4e763cdbdf8f567efca89849.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fire gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Ruger American Rifle Gen 2</h4>
+                                                <p>CALIBER: 204 Ruger</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        589 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P004" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/81de39d4e6055f5a9686c6ab12b09915.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Air gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Crosman DPMS SBR 4.5mm BB</h4>
+                                                <p>CALIBER: 4.5mm</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        185 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P009" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/c0ffe06048bf8a80bc3639c7947e0430.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Hatsan USA Vortex Strike 25 Pellet</h4>
+                                                <p>CALIBER: 25 Pellet</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        10 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P006" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/5e61e2e067c9287958934e0110ce4579.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fire gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Smith &amp; Wesson MP15 Tactical 5.56/223</h4>
+                                                <p>CALIBER: 223 Remington</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        1.721 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P005" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/233ded8af0157aced35cb7077df221d5.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>PMC Bronze 308 Win 7.62x51mm</h4>
+                                                <p>CALIBER: 308 Win 7.62x51mm</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        22 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P007" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/02f82835c11bd805a8b2dfc72a993d5f.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Umarex Elite Force BIO 6mm BB</h4>
+                                                <p>CALIBER: 6mm BB</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        20 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P008" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/5b492cabff1c3d98959d8e1881feeb61.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fire gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Century VSKA AK-47 7.62x39</h4>
+                                                <p>CALIBER: 7.62x39</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        671 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P003" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/39c5ad8075b7f186c39ea8c49a16823b.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Hatsan AirTact Rifle 25 Pellet</h4>
+                                                <p>CALIBER: 25 Pellet</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        100 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P010" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/02f82835c11bd805a8b2dfc72a993d5f.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Umarex Elite Force BIO 6mm BB</h4>
+                                                <p>CALIBER: 6mm BB</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        20 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P008" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/233ded8af0157aced35cb7077df221d5.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>PMC Bronze 308 Win 7.62x51mm</h4>
+                                                <p>CALIBER: 308 Win 7.62x51mm</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        22 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P007" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/39c5ad8075b7f186c39ea8c49a16823b.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Hatsan AirTact Rifle 25 Pellet</h4>
+                                                <p>CALIBER: 25 Pellet</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        100 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P010" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/c0ffe06048bf8a80bc3639c7947e0430.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Bullet                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Hatsan USA Vortex Strike 25 Pellet</h4>
+                                                <p>CALIBER: 25 Pellet</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        10 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P006" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/5b492cabff1c3d98959d8e1881feeb61.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fire gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Century VSKA AK-47 7.62x39</h4>
+                                                <p>CALIBER: 7.62x39</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        671 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P003" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/5e61e2e067c9287958934e0110ce4579.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fire gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Smith &amp; Wesson MP15 Tactical 5.56/223</h4>
+                                                <p>CALIBER: 223 Remington</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        1.721 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P005" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/77aa7aca4e763cdbdf8f567efca89849.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fire gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Ruger American Rifle Gen 2</h4>
+                                                <p>CALIBER: 204 Ruger</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        589 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P004" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="./index_files/81de39d4e6055f5a9686c6ab12b09915.png" class="img-fluid w-100 rounded-top" style="width: 300px;height: 250px;" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Air gun                                            </div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Crosman DPMS SBR 4.5mm BB</h4>
+                                                <p>CALIBER: 4.5mm</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">
+                                                        185 USD
+                                                    </p>
+                                                    <a href="http://bintang.test/shop-detail.php?kode_produk=P009" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fruits Shop End-->
+
+    <!-- Featurs Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <a href="http://bintang.test/#">
+                        <div class="service-item bg-secondary rounded border border-secondary">
+                            <img src="./index_files/angin.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-primary text-center p-4 rounded">
+                                    <h5 class="text-white">Air gun</h5>
+                                    <h3 class="mb-0">20% OFF</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="http://bintang.test/#">
+                        <div class="service-item bg-dark rounded border border-dark">
+                            <img src="./index_files/amunisi.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-light text-center p-4 rounded">
+                                    <h5 class="text-primary">Bullet</h5>
+                                    <h3 class="mb-0">Gratis Ongkir</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="http://bintang.test/#">
+                        <div class="service-item bg-primary rounded border border-primary">
+                            <img src="./index_files/api.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-secondary text-center p-4 rounded">
+                                    <h5 class="text-white">Fire gun</h5>
+                                    <h3 class="mb-0">Discount 30$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featurs End -->
+
+    <!-- Fact Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="bg-light p-5 rounded">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>satisfied customers</h4>
+                            <h1>1963</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality of service</h4>
+                            <h1>99%</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality certificates</h4>
+                            <h1>33</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>Available Products</h4>
+                            <h1>789</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact Start -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-6">
+                    <div class="col-lg-6">
+                        <a href="http://bintang.test/#">
+                            <h1 class="text-primary mb-0">BINTANG GUN SHOP</h1>
+                            <p class="text-secondary mb-0">Legal products</p>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end pt-3">
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://github.com/Flmori" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://wa.me/6281232890181" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://www.instagram.com/bin_mori/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href="https://www.linkedin.com/in/bintang-putra-nagari-b18577272/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-8 col-md-6">
+                    <div class="footer-item col-lg-6">
+                        <h4 class="text-light mb-3">Mengapa Orang Menyukai kami!</h4>
+                        <p class="mb-4">BINTANG GUN SHOP dengan bangga mendukung dan percaya pada kepemilikan senjata
+                            yang bertanggung jawab, Dengan harga yang tidak ada duanya dan dedikasi kami terhadap
+                            layanan pelanggan yang ramah.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-light mb-3">Hubungi Kami</h4>
+                        <p>Email: putranbintang5@gmail.com</p>
+                        <p>Phone: +62 812-3289-0181</p>
+                        <p>Payment Accepted</p>
+                        <img src="./index_files/payment.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light">All right reserved <a href="http://bintang.test/#"><i class="fas fa-copyright text-light me-2">
+                                Copyright
+                                2024</i>BINTANG GUN SHOP</a></span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    Designed By
+                    <a class="border-bottom" href="http://bintang.test/#">Mori</a>
+                    Powered By
+                    <a class="border-bottom" href="http://bintang.test/#">Meko no Mori</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="http://bintang.test/#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top" style=""><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="./index_files/jquery.min.js.download"></script>
+    <script src="./index_files/bootstrap.bundle.min.js.download"></script>
+    <script src="./index_files/easing.min.js.download"></script>
+    <script src="./index_files/waypoints.min.js.download"></script>
+    <script src="./index_files/lightbox.min.js.download"></script>
+    <script src="./index_files/owl.carousel.min.js.download"></script>
+
+    <!-- Template Javascript -->
+    <script src="./index_files/main.js.download"></script>
+
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href="http://bintang.test/"></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href="http://bintang.test/"></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div></body></html>
